@@ -7,6 +7,11 @@ public class Main {
     static int factorial(int n) { // ищем факториал
         return (n > 0) ? n * factorial(n - 1) : 1;
     }
+    
+     static int arraySum(int[] array, int i) {
+        return (i >= 0) ? array[i] + arraySum(array, i - 1) : array[0];
+        
+    }
 
     static boolean isPalindrome(List<Integer> list) { // можно ли список сделать палиндромным
         boolean result = false;
